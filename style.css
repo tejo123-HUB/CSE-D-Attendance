@@ -1,0 +1,484 @@
+:root {
+    /* Main Backgrounds */
+    --bg-color: #f4f7f6; /* Soft cool off-white */
+    --bg-pattern: radial-gradient(circle at 15% 50%, rgba(74, 112, 169, 0.08), transparent 25%),
+                  radial-gradient(circle at 85% 30%, rgba(145, 200, 228, 0.1), transparent 25%);
+    --card-bg: #ffffff;
+    
+    /* Text */
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --text-muted: #94a3b8;
+    
+    /* Accents (From Palette 3 & 4) */
+    --accent: #4a70a9;
+    --accent-hover: #3b5a88;
+    --accent-light: #eff6ff;
+    
+    /* Status Colors */
+    --danger: #ef4444;
+    --danger-bg: #fef2f2;
+    --danger-border: #fca5a5;
+    --success: #10b981;
+    
+    /* Layout & Borders */
+    --card-border: #e2e8f0;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+    
+    --safe-area-bottom: env(safe-area-inset-bottom, 20px);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-color);
+    background-image: var(--bg-pattern);
+    background-attachment: fixed;
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 3rem 1.5rem 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+header p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+}
+
+.highlight {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* ATTENDANCE VIEW STICKY HEADER */
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid var(--card-border);
+    box-shadow: var(--shadow-sm);
+}
+
+.count-display {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.5rem;
+}
+
+.count-display .highlight-count {
+    color: var(--danger);
+    font-size: 1.5rem;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 0.875rem 1.5rem;
+    border-radius: 14px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn:active {
+    transform: scale(0.96);
+}
+
+.primary-btn {
+    background: var(--accent);
+    color: white;
+    box-shadow: 0 4px 14px 0 rgba(74, 112, 169, 0.3);
+}
+
+.primary-btn:hover {
+    background: var(--accent-hover);
+    box-shadow: 0 6px 20px rgba(74, 112, 169, 0.4);
+}
+
+.secondary-btn {
+    background: var(--success);
+    color: white;
+    box-shadow: 0 4px 14px 0 rgba(16, 185, 129, 0.2);
+}
+
+.secondary-btn:hover {
+    background: #059669;
+}
+
+.tertiary-btn {
+    background: #f1f5f9;
+    color: var(--text-primary);
+    border: 1px solid transparent;
+}
+
+.tertiary-btn:hover {
+    background: #e2e8f0;
+}
+
+/* STUDENT LIST */
+.student-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.5rem 1.5rem calc(3rem + var(--safe-area-bottom));
+    flex: 1;
+}
+
+.student-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    min-height: 76px; 
+    box-shadow: var(--shadow-sm);
+    animation: fadeIn 0.4s ease-out backwards;
+}
+
+.student-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: #cbd5e1;
+    transform: translateY(-2px);
+}
+
+.student-card.absent {
+    background: var(--danger-bg);
+    border-color: var(--danger-border);
+}
+
+.student-card.absent:hover {
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.15);
+}
+
+.student-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.student-roll {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+
+.student-card.absent .student-roll {
+    color: #b91c1c; /* deeper red for text contrast */
+}
+
+/* CHECKBOX */
+.checkbox-wrapper {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.checkbox-wrapper input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 28px;
+    width: 28px;
+    background-color: #f1f5f9;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.student-card:hover .checkmark {
+    border-color: #94a3b8;
+}
+
+.student-card.absent .checkmark {
+    background-color: var(--danger);
+    border-color: var(--danger);
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.3);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 4px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2.5px 2.5px 0;
+    transform: rotate(45deg);
+}
+
+.student-card.absent .checkmark:after {
+    display: block;
+    animation: checkmarkIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.5); /* dark slate overlay */
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.modal.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-content {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 24px;
+    padding: 2.5rem;
+    width: 90%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transform: translateY(0) scale(1);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: var(--shadow-lg);
+}
+
+.modal.hidden .modal-content {
+    transform: translateY(20px) scale(0.95);
+}
+
+.modal-content h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
+
+textarea {
+    width: 100%;
+    height: 180px;
+    background: #f8fafc;
+    border: 2px solid var(--card-border);
+    border-radius: 12px;
+    padding: 1rem;
+    color: var(--text-primary);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+    resize: none;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(74, 112, 169, 0.15);
+}
+
+.modal-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.modal-actions .btn {
+    width: 100%;
+}
+
+.mobile-drag-handle {
+    display: none;
+}
+
+.desktop-only {
+    display: inline-block;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes checkmarkIn {
+    0% { transform: rotate(45deg) scale(0); }
+    100% { transform: rotate(45deg) scale(1); }
+}
+
+/* DESKTOP ENHANCEMENTS */
+@media (min-width: 768px) {
+    .container {
+        padding: 2rem;
+    }
+    
+    .list-header, .student-list {
+        background: #ffffff;
+        border: 1px solid var(--card-border);
+        box-shadow: var(--shadow-sm);
+    }
+    
+    .list-header {
+        border-radius: 24px 24px 0 0;
+        border-bottom: 1px solid var(--card-border);
+        top: 2rem;
+    }
+    
+    .student-list {
+        border-radius: 0 0 24px 24px;
+        border-top: none;
+        padding: 1.5rem;
+        max-height: 65vh;
+        overflow-y: auto;
+    }
+}
+
+/* MOBILE ADJUSTMENTS */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 2.1rem;
+    }
+    
+    header {
+        padding: 2rem 1rem 1rem;
+    }
+    
+    .list-header {
+        padding: 1rem 1.25rem;
+    }
+    
+    .student-list {
+        padding: 1rem 1.25rem calc(3rem + var(--safe-area-bottom));
+    }
+    
+    .student-card {
+        padding: 1rem;
+        border-radius: 20px;
+    }
+    
+    .btn {
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .desktop-only {
+        display: none;
+    }
+    
+    .modal {
+        align-items: flex-end;
+    }
+    
+    .modal-content {
+        width: 100%;
+        max-width: none;
+        border-radius: 28px 28px 0 0;
+        padding: 2rem 1.5rem calc(2rem + var(--safe-area-bottom));
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .modal.hidden .modal-content {
+        transform: translateY(100%);
+    }
+
+    .mobile-drag-handle {
+        display: block;
+        width: 48px;
+        height: 6px;
+        background: #cbd5e1;
+        border-radius: 3px;
+        margin: -10px auto 25px auto;
+    }
+}
