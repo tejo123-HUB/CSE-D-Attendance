@@ -4,7 +4,7 @@ A lightweight, fully responsive web application built to easily track and mark a
 
 ## Features
 
-- **Custom Roll Number List:** Pre-configured with all 70 students of the CSE-D section (including lateral entries).
+- **Custom Roll Number List:** Pre-configured with all 69 students of the CSE-D section (including lateral entries).
 - **Intuitive UI:** Clean list layout with checkboxes and dynamic counting. Designed to mimic the aesthetics of modern professional applications.
 - **One-Click Generation:** Clicking the "Generate" button opens a modal with a cleanly formatted list of absentees.
 - **Smart Formatting:**
