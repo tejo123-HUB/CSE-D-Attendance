@@ -265,6 +265,304 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             "name": "YEKAMBARAM YAMENI GANGA",
             "roll": "25EU04132"
+        },
+        {
+            "name": "BOOTHAPATI RATNARAJ",
+            "roll": "LECS003"
+        },
+        {
+            "name": "CHALAMASETTI LAKSHMI CHAITANYA",
+            "roll": "LECS004"
+        },
+        {
+            "name": "DASARI MYTHILI DIVYA",
+            "roll": "LECS006"
+        }
+    ],
+    "cse3": [
+        {
+            "name": "ABDUL ADAL",
+            "roll": "25EU04133"
+        },
+        {
+            "name": "ABDUL SANIA",
+            "roll": "25EU04134"
+        },
+        {
+            "name": "CH.AKSHAYA",
+            "roll": "25EU04135"
+        },
+        {
+            "name": "A.HANSITHA",
+            "roll": "25EU04136"
+        },
+        {
+            "name": "A.TEJESWAR",
+            "roll": "25EU04137"
+        },
+        {
+            "name": "A.HEMA SRINIVAS",
+            "roll": "25EU04138"
+        },
+        {
+            "name": "AYMAN SALEEM",
+            "roll": "25EU04139"
+        },
+        {
+            "name": "B. VEDHIK",
+            "roll": "25EU04140"
+        },
+        {
+            "name": "B.MEGHANA",
+            "roll": "25EU04141"
+        },
+        {
+            "name": "B.TEJASPHOORTHI",
+            "roll": "25EU04142"
+        },
+        {
+            "name": "B.BRAHMANI",
+            "roll": "25EU04143"
+        },
+        {
+            "name": "B.GAYATRI DEVI",
+            "roll": "25EU04144"
+        },
+        {
+            "name": "CHALLA.PARDHASARADHI",
+            "roll": "25EU04145"
+        },
+        {
+            "name": "CH.RAGHUVEER",
+            "roll": "25EU04146"
+        },
+        {
+            "name": "D. ABHIRAM",
+            "roll": "25EU04147"
+        },
+        {
+            "name": "D.LAKSHMI SAHASRA",
+            "roll": "25EU04148"
+        },
+        {
+            "name": "D.DHAATRI SARANYA",
+            "roll": "25EU04149"
+        },
+        {
+            "name": "D. JENITHA",
+            "roll": "25EU04150"
+        },
+        {
+            "name": "G.VIVEK",
+            "roll": "25EU04151"
+        },
+        {
+            "name": "G. BINDU",
+            "roll": "25EU04152"
+        },
+        {
+            "name": "GOSHRITHA.RAVULAPALLI",
+            "roll": "25EU04153"
+        },
+        {
+            "name": "G.VINAY SAI PAVAN",
+            "roll": "25EU04154"
+        },
+        {
+            "name": "J.LIKHIT VENKATA SAI VASUDEV",
+            "roll": "25EU04155"
+        },
+        {
+            "name": "J SRI DIVYA",
+            "roll": "25EU04156"
+        },
+        {
+            "name": "YOGESH RAJ",
+            "roll": "25EU04157"
+        },
+        {
+            "name": "K.SRI RUSHMA",
+            "roll": "25EU04158"
+        },
+        {
+            "name": "K.SATISH CHANDRA",
+            "roll": "25EU04159"
+        },
+        {
+            "name": "K.ROHIN RAM",
+            "roll": "25EU04160"
+        },
+        {
+            "name": "K.MEDHA",
+            "roll": "25EU04161"
+        },
+        {
+            "name": "K.VARNIKA",
+            "roll": "25EU04162"
+        },
+        {
+            "name": "EESHITHA",
+            "roll": "25EU04163"
+        },
+        {
+            "name": "K.YASASWI",
+            "roll": "25EU04164"
+        },
+        {
+            "name": "K.DOONDI",
+            "roll": "25EU04165"
+        },
+        {
+            "name": "K.DHARTHI",
+            "roll": "25EU04166"
+        },
+        {
+            "name": "L.VEDA SRI",
+            "roll": "25EU04167"
+        },
+        {
+            "name": "M. VEERA VENKATA ABHIRAM",
+            "roll": "25EU04168"
+        },
+        {
+            "name": "M.DHANA ISWARYA",
+            "roll": "25EU04169"
+        },
+        {
+            "name": "M.MANOGNA",
+            "roll": "25EU04170"
+        },
+        {
+            "name": "M.YOSHITHA",
+            "roll": "25EU04171"
+        },
+        {
+            "name": "MD.IQBAL",
+            "roll": "25EU04172"
+        },
+        {
+            "name": "MD.SALEEMUNNISA",
+            "roll": "25EU04173"
+        },
+        {
+            "name": "MD.SHAZIA",
+            "roll": "25EU04174"
+        },
+        {
+            "name": "MD.SAFEENA THARUNNAM",
+            "roll": "25EU04175"
+        },
+        {
+            "name": "JASWANTH REDDY.M",
+            "roll": "25EU04176"
+        },
+        {
+            "name": "N.D ABHIRAM",
+            "roll": "25EU04177"
+        },
+        {
+            "name": "N. JASWANTH",
+            "roll": "25EU04178"
+        },
+        {
+            "name": "N.RAM PRANEETH",
+            "roll": "25EU04179"
+        },
+        {
+            "name": "P. REVANTH SAI",
+            "roll": "25EU04180"
+        },
+        {
+            "name": "P.LAKSHMI SAI PRATHYUSHA",
+            "roll": "25EU04181"
+        },
+        {
+            "name": "R.ABHINAV CHOWDARY",
+            "roll": "25EU04182"
+        },
+        {
+            "name": "R.MONIKA TARA",
+            "roll": "25EU04183"
+        },
+        {
+            "name": "S.THANISHKA",
+            "roll": "25EU04184"
+        },
+        {
+            "name": "SK ASHRAF AHMED",
+            "roll": "25EU04185"
+        },
+        {
+            "name": "SK. SIDDIQ AHMAD",
+            "roll": "25EU04186"
+        },
+        {
+            "name": "AMRUTHA SAHITHYA",
+            "roll": "25EU04187"
+        },
+        {
+            "name": "T. SHANMUKHA VENKATA SAI",
+            "roll": "25EU04188"
+        },
+        {
+            "name": "T DHARMA TEJA",
+            "roll": "25EU04189"
+        },
+        {
+            "name": "T.GEETHIKA",
+            "roll": "25EU04190"
+        },
+        {
+            "name": "T.KRISHNA SASANK",
+            "roll": "25EU04191"
+        },
+        {
+            "name": "T.LAKSHMI BHAVANI",
+            "roll": "25EU04192"
+        },
+        {
+            "name": "V.SPOORTHY",
+            "roll": "25EU04193"
+        },
+        {
+            "name": "V INDHIRA REDDY",
+            "roll": "25EU04194"
+        },
+        {
+            "name": "VENTRAPRAGADA VAISHNAVI",
+            "roll": "25EU04195"
+        },
+        {
+            "name": "YANNAM YOGITHA",
+            "roll": "25EU04196"
+        },
+        {
+            "name": "Y.SUPRIYA",
+            "roll": "25EU04197"
+        },
+        {
+            "name": "Y.HIMAJA",
+            "roll": "25EU04198"
+        },
+        {
+            "name": "DUADAKA NAGA DURGA PAVANI",
+            "roll": "LECS007"
+        },
+        {
+            "name": "KATARI LAHARI",
+            "roll": "LECS008"
+        },
+        {
+            "name": "KUMMARI BHUVANESWARI",
+            "roll": "LECS011"
+        },
+        {
+            "name": "VALAPULA SHALINI",
+            "roll": "LECS016"
+        },
+        {
+            "name": "NOORJAHANMD",
+            "roll": ""
         }
     ],
     "cse4": [
@@ -533,14 +831,23 @@ document.addEventListener('DOMContentLoaded', () => {
             "roll": "25EU04264"
         },
         {
-            "name": "ADUSUMALLI LAKSHMI SRIJA",
-            "roll": "25EU04265"
+            "name": "KOLLURU SASIVADAN",
+            "roll": "LECS009"
+        },
+        {
+            "name": "KONDA SIVA KRISHNA",
+            "roll": "LECS010"
+        },
+        {
+            "name": "GUDDAPPA GOVINDAPPA GARI TEJASWINI",
+            "roll": "LECS017"
         }
     ]
 };
     
     const sectionTitles = {
         "cse2": "CSE II",
+        "cse3": "CSE III",
         "cse4": "CSE IV"
     };
 
