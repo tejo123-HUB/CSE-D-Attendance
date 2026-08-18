@@ -309,10 +309,6 @@ document.addEventListener('DOMContentLoaded', () => {
             "roll": "25EU04139"
         },
         {
-            "name": "B. VEDHIK",
-            "roll": "25EU04140"
-        },
-        {
             "name": "B.MEGHANA",
             "roll": "25EU04141"
         },
@@ -335,10 +331,6 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             "name": "CH.RAGHUVEER",
             "roll": "25EU04146"
-        },
-        {
-            "name": "D. ABHIRAM",
-            "roll": "25EU04147"
         },
         {
             "name": "D.LAKSHMI SAHASRA",
@@ -511,10 +503,6 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             "name": "T.GEETHIKA",
             "roll": "25EU04190"
-        },
-        {
-            "name": "T.KRISHNA SASANK",
-            "roll": "25EU04191"
         },
         {
             "name": "T.LAKSHMI BHAVANI",
